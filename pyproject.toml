@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clipforge"
+version = "0.1.0"
+description = "Turn long videos into captioned vertical clips, locally."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+# Local, offline speech-to-text. No API key, no uploads.
+local = ["faster-whisper>=1.0.0"]
+# Desktop UI.
+gui = ["PySide6>=6.6"]
+# Face-aware auto-reframe.
+vision = ["opencv-python-headless>=4.9", "numpy>=1.24"]
+# Everything.
+all = [
+    "faster-whisper>=1.0.0",
+    "PySide6>=6.6",
+    "opencv-python-headless>=4.9",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+clipforge = "clipforge.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["clipforge*"]

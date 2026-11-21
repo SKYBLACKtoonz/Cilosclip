@@ -1,0 +1,16 @@
+# ClipForge core has NO third-party dependencies.
+# It only needs Python 3.10+ and ffmpeg on your PATH.
+#
+# Optional extras, install what you want:
+#
+#   Local offline transcription (recommended, no API key)
+#   pip install faster-whisper
+#
+#   Desktop GUI
+#   pip install PySide6
+#
+#   Face-aware auto-reframe
+#   pip install opencv-python-headless numpy
+#
+# Or install everything at once:
+#   pip install -e ".[all]"
