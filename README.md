@@ -14,4 +14,4 @@ Privacy is a core part of the design. Everything runs on your own computer. Your
 
 ## Running Cilos
 
-Double-click `run` in the project folder. Pick a video, adjust your settings, and click **Make clips**.
+Run `setup` once to install the requirements. After that, double-click `run` in the project folder. Pick a video, adjust your settings, and click **Make clips**.
